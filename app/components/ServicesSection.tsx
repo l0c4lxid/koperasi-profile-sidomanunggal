@@ -1,4 +1,4 @@
-import { services } from "../page";
+import { services } from "../data/data"; // Import data layanan dari file data
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDollarSign,

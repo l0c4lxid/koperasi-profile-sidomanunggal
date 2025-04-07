@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import emailjs from "emailjs-com"; // Mengimpor EmailJS
-import { PlaceholderImage } from "../page";
+import { PlaceholderImage } from "../data/data"; // Mengimpor komponen placeholder untuk gambar
 
 // Mendapatkan variabel lingkungan
 const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "";

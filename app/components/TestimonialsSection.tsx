@@ -1,4 +1,4 @@
-import { testimonials } from "../page";
+import { testimonials } from "../data/data"; // Mengimpor data testimoni dari file data
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons"; // Mengimpor ikon bintang dan komentar
 
