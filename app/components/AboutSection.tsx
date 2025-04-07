@@ -1,4 +1,4 @@
-import { PlaceholderImage } from "../app/page";
+import { PlaceholderImage } from "../page";
 
 export default function AboutSection() {
   return (
