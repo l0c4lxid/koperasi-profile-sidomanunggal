@@ -9,10 +9,12 @@ import ServicesSection from "./components/ServicesSection";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import CTASection from "./components/CTASection";
-import ContactSection from "./components/ContactSection";
-
-// Import data from the data file
-// Adjust the import path based on where you placed your data file
+import dynamic from "next/dynamic";
+// Import ContactSection dynamically with SSR disabled
+const ContactSection = dynamic(
+  () => import("./components/ContactSection"),
+  { ssr: false } // This ensures the component only loads on the client side
+);
 
 export default function Home() {
   return (
