@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,9 +43,17 @@ export default function Header() {
         <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
           <a
             href="#home"
-            className="text-xl font-bold text-blue-700 hover:text-blue-800"
+            className="flex items-center space-x-2 text-xl font-bold text-blue-700 hover:text-blue-800"
           >
-            Koperasi Sidomanunggal
+            {/* Logo dari favicon */}
+            <Image
+              src="/favicon.ico"
+              alt="Logo Koperasi"
+              width={30}
+              height={30}
+              className="rounded-sm"
+            />
+            <span>Koperasi</span>
           </a>
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center">
