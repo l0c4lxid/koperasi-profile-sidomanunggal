@@ -1,4 +1,4 @@
-import { PlaceholderImage } from "../data/data";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -15,9 +15,8 @@ export default function AboutSection() {
             <p className="text-gray-700 mb-4 leading-relaxed text-base">
               Koperasi Sidomanunggal adalah lembaga keuangan mikro yang
               berlandaskan asas kekeluargaan dan gotong royong. Kami hadir sejak
-              [Tahun Berdiri - Ganti jika tahu] untuk melayani kebutuhan simpan
-              pinjam dan kredit bagi anggota kami di wilayah [Wilayah
-              Pelayanan].
+              2012 untuk melayani kebutuhan simpan pinjam dan kredit bagi
+              anggota kami di wilayah Kulon Progo.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed text-base">
               Visi kami adalah menjadi koperasi yang sehat, mandiri, tangguh,
@@ -46,8 +45,17 @@ export default function AboutSection() {
               </svg>
             </a>
           </div>
+
+          {/* Ganti PlaceholderImage */}
           <div className="order-1 md:order-2">
-            <PlaceholderImage className="w-full h-80 lg:h-96 rounded-lg shadow-lg" />
+            <Image
+              src="/profile.jpg"
+              alt="Profil Koperasi Sidomanunggal"
+              width={600}
+              height={400}
+              className="w-full h-80 lg:h-96 rounded-lg shadow-lg object-cover"
+              priority
+            />
           </div>
         </div>
       </div>
