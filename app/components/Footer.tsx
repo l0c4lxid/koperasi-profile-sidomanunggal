@@ -75,10 +75,10 @@ export default function Footer() {
           <div>
             <h5 className="text-lg font-semibold text-white mb-4">Kontak</h5>
             <ul className="space-y-2 text-sm">
-              <li>Jl. Kesejahteraan No. 123</li>
-              <li>Desa Manunggal, Kab. Maju Jaya</li>
-              <li>Email: info@koperasisidomanunggal.co.id</li>
-              <li>Telp: (021) 123-4567</li>
+              <li>Jl. Balai Desa No.3, Ledok, Sidorejo, Kec. Lendah</li>
+              <li>Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55663</li>
+              <li>Email: cs@koperasikredit-sidomanunggal.my.id</li>
+              <li>Telp: 0856-4786-8154</li>
             </ul>
           </div>
           {/* Footer Column 4: Social Media */}

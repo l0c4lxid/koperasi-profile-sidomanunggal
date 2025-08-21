@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Analytics } from "@vercel/analytics/next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
@@ -28,6 +29,7 @@ export default function Home() {
         <TestimonialsSection />
         <CTASection />
         <ContactSection />
+        <Analytics />
       </main>
       <Footer />
     </div>
