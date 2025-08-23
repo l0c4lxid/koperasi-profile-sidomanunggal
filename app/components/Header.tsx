@@ -9,23 +9,13 @@ export default function Header() {
 
   // Effect untuk mendeteksi scroll
   useEffect(() => {
-    const handleScroll = () => {
-      // Mengubah state isScrolled berdasarkan posisi scroll
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    // Menambahkan event listener untuk scroll
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup event listener saat komponen unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // helper: close mobile menu saat klik link
+  const handleNavClick = () => setIsMobileMenuOpen(false);
 
   return (
     <header
@@ -45,7 +35,6 @@ export default function Header() {
             href="#home"
             className="flex items-center space-x-2 text-xl font-bold text-blue-700 hover:text-blue-800"
           >
-            {/* Logo dari favicon */}
             <Image
               src="/favicon.ico"
               alt="Logo Koperasi"
@@ -55,6 +44,7 @@ export default function Header() {
             />
             <span>Koperasi</span>
           </a>
+
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center">
             <a
@@ -75,6 +65,28 @@ export default function Header() {
             >
               Layanan
             </a>
+
+            {/* === Tambahan baru === */}
+            <a
+              href="#loan"
+              className="text-gray-600 hover:text-blue-700 transition duration-150"
+            >
+              Syarat Meminjam
+            </a>
+            <a
+              href="#membership"
+              className="text-gray-600 hover:text-blue-700 transition duration-150"
+            >
+              Syarat Anggota
+            </a>
+            <a
+              href="#simulasi"
+              className="text-gray-600 hover:text-blue-700 transition duration-150"
+            >
+              Simulasi
+            </a>
+            {/* === /Tambahan baru === */}
+
             <a
               href="#contact"
               className="text-gray-600 hover:text-blue-700 transition duration-150"
@@ -88,6 +100,7 @@ export default function Header() {
               Gabung Sekarang
             </a>
           </div>
+
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
@@ -100,7 +113,6 @@ export default function Header() {
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   strokeLinecap="round"
@@ -128,35 +140,60 @@ export default function Header() {
           <a
             href="#home"
             className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={handleNavClick}
           >
             Beranda
           </a>
           <a
             href="#about"
             className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={handleNavClick}
           >
             Tentang Kami
           </a>
           <a
             href="#services"
             className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={handleNavClick}
           >
             Layanan
           </a>
+
+          {/* === Tambahan baru === */}
+          <a
+            href="#loan"
+            className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
+            onClick={handleNavClick}
+          >
+            Syarat Meminjam
+          </a>
+          <a
+            href="#membership"
+            className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
+            onClick={handleNavClick}
+          >
+            Syarat Anggota
+          </a>
+          <a
+            href="#simulasi"
+            className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
+            onClick={handleNavClick}
+          >
+            Simulasi
+          </a>
+          {/* === /Tambahan baru === */}
+
           <a
             href="#contact"
             className="block py-2 text-gray-700 hover:text-blue-700 font-medium"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={handleNavClick}
           >
             Kontak
           </a>
           <a
             href="#join"
             className="block mt-3 bg-blue-600 hover:bg-blue-700 text-white text-center px-4 py-2 rounded-md text-sm font-medium transition duration-300 shadow-sm"
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={handleNavClick}
           >
             Gabung Sekarang
           </a>
