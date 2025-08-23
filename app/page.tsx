@@ -10,6 +10,9 @@ import ServicesSection from "./components/ServicesSection";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import CTASection from "./components/CTASection";
+import LoanRequirementsSection from "./components/LoanRequirementsSection";
+import MemberRequirementsSection from "./components/MemberRequirementsSection";
+import SimulationSection from "./components/SimulationSection";
 import dynamic from "next/dynamic";
 // Import ContactSection dynamically with SSR disabled
 const ContactSection = dynamic(
@@ -25,6 +28,9 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <LoanRequirementsSection />
+        <MemberRequirementsSection />
+        <SimulationSection />
         <WhyChooseUsSection />
         <TestimonialsSection />
         <CTASection />
