@@ -9,6 +9,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: "https://www.koperasikredit-sidomanunggal.my.id/koperasi-kulon-progo",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
     // Jika nanti kamu buat halaman terpisah (bukan sekadar #section), tambahkan di sini:
     // { url: `${base}/syarat-meminjam`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     // { url: `${base}/syarat-anggota`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
