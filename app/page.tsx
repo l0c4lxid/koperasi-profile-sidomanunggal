@@ -13,6 +13,7 @@ import CTASection from "./components/CTASection";
 import LoanRequirementsSection from "./components/LoanRequirementsSection";
 import MemberRequirementsSection from "./components/MemberRequirementsSection";
 import SimulationSection from "./components/SimulationSection";
+import BackToTop from "./components/BackToTop";
 import dynamic from "next/dynamic";
 // Import ContactSection dynamically with SSR disabled
 const ContactSection = dynamic(
@@ -36,6 +37,7 @@ export default function Home() {
         <CTASection />
         <ContactSection />
         <Analytics />
+        <BackToTop />
       </main>
       <Footer />
     </div>
