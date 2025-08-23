@@ -1,14 +1,13 @@
-export type Method = "anuitas" | "flat";
-
-export const defaultSimulation = {
-  principal: 5_000_000, // pokok (Rp)
-  tenorMonths: 12, // bulan
-  ratePercent: 1.5, // % per bulan
-  method: "anuitas" as Method,
-  noInterest: false,
+export type SimulationDefaults = {
+  principal: number; // Pokok pinjaman (Rp)
+  tenorMonths: number; // Tenor (bulan)
+  interestPercent: number; // Bunga per angsuran (% dari pokok awal)
+  swpPercent: number; // Potongan awal SWP (% dari pokok)
 };
 
-export const methodOptions: { value: Method; label: string }[] = [
-  { value: "anuitas", label: "Anuitas (angsuran tetap)" },
-  { value: "flat", label: "Flat (bunga dari pokok awal)" },
-];
+export const defaultSimulation: SimulationDefaults = {
+  principal: 1_000_000,
+  tenorMonths: 10,
+  interestPercent: 2.0, // contohmu: 2% tetap
+  swpPercent: 2.5, // contohmu: SWP 2.5%
+};
