@@ -10,12 +10,12 @@ export default function AboutSection() {
               Tentang Kami
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5">
-              Mengenal Koperasi Sidomanunggal
+              Mengenal Koperasi Sido Manunggal
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed text-base">
-              Koperasi Sidomanunggal adalah lembaga keuangan mikro yang
+              Koperasi Sido Manunggal adalah lembaga keuangan mikro yang
               berlandaskan asas kekeluargaan dan gotong royong. Kami hadir sejak
-              2012 untuk melayani kebutuhan simpan pinjam dan kredit bagi
+              1998 untuk melayani kebutuhan simpan pinjam dan kredit bagi
               anggota kami di wilayah Kulon Progo.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed text-base">

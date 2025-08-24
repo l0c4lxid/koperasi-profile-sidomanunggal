@@ -1,22 +1,26 @@
 export type Fee = { name: string; value: string };
 
 export const memberRequirements: string[] = [
-  "WNI berusia ≥ 17 tahun atau sudah menikah",
-  "Domisili/aktivitas ekonomi di wilayah layanan koperasi",
-  "Mengisi formulir pendaftaran dan menyetujui AD/ART",
-  "Setoran simpanan pokok & simpanan wajib sesuai ketentuan",
-  "Fotokopi KTP & pas foto (jika diminta)",
+  "Nama lengkap",
+  "Alamat",
+  "Pekerjaan",
+  "Kantor Kerja",
+  "Tempat & Tanggal Lahir",
+  "Nama Istri/Suami",
+  "NIK (Nomor Induk Kependudukan)",
 ];
 
 export const memberBenefits: string[] = [
-  "Akses produk simpanan & pinjaman dengan bunga kompetitif",
-  "Bagi hasil (SHU) sesuai ketentuan",
-  "Edukasi keuangan & pelatihan anggota",
-  "Transparansi laporan keuangan",
+  "Calon anggota mengisi formulir ini dengan lengkap.",
+  "Membayar setoran awal sesuai rincian di atas.",
+  "Formulir ditandatangani oleh pemohon dan pengurus koperasi.",
+  "Setelah diterima, resmi menjadi anggota koperasi.",
 ];
 
 export const memberFees: Fee[] = [
-  { name: "Simpanan Pokok (sekali bayar)", value: "Rp100.000" },
-  { name: "Simpanan Wajib (bulanan)", value: "Rp25.000" },
-  { name: "Biaya pendaftaran (jika ada)", value: "Rp10.000" },
+  { name: "Uang Pangkal", value: "Rp10.000" },
+  { name: "Uang Penyertaan", value: "Rp75.000" },
+  { name: "Simpanan Pokok (sekali bayar)", value: "Rp10.000" },
+  { name: "Simpanan Sukarela", value: " " },
+  { name: "Simpanan Wajib (bulanan)", value: "Rp5.000" },
 ];

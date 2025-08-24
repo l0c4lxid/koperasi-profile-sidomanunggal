@@ -301,10 +301,10 @@ export default function ContactSection() {
                   Jam Operasional Kantor:
                 </h4>
                 <p className="text-gray-600 text-base">
-                  Senin - Jumat: 08.00 - 16.00 WIB
+                  Senin - Kamis, Sabtu: 08.00 - 13.00 WIB
                 </p>
                 <p className="text-gray-600 text-base">
-                  Sabtu: 08.00 - 12.00 WIB
+                  Sabtu: 08.00 - 11.00 WIB
                 </p>
                 <p className="text-gray-600 text-base">
                   Minggu & Hari Libur Nasional: Tutup

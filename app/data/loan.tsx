@@ -2,33 +2,33 @@ export type Step = { title: string; desc: string };
 export type Requirement = string;
 
 export const loanSteps: Step[] = [
-  { title: "Cek Keanggotaan", desc: "Peminjam wajib merupakan anggota aktif." },
+  { title: "Pokok pinjaman", desc: "Jumlah pinjaman yang diambil." },
   {
-    title: "Siapkan Dokumen",
-    desc: "KTP, Kartu Anggota, slip gaji/bukti penghasilan, dan form pengajuan pinjaman.",
+    title: "Tagihan angsuran pokok per bulan",
+    desc: "Cicilan dari pokok pinjaman.",
   },
   {
-    title: "Pengajuan di Kantor",
-    desc: "Verifikasi identitas & pengisian formulir oleh petugas koperasi.",
+    title: "Jasa (bunga) pinjaman",
+    desc: "Ada bunga tetap 2% per bulan.",
   },
   {
-    title: "Survey & Analisis",
-    desc: "Verifikasi data, analisis kemampuan bayar, dan penentuan plafon pinjaman.",
+    title: "Tagihan jasa per bulan",
+    desc: "Tambahan jasa/bunga rutin.",
   },
   {
-    title: "Persetujuan & Pencairan",
-    desc: "Tanda tangan perjanjian pinjaman dan pencairan dana sesuai ketentuan.",
+    title: "Denda 0,5% dari tunggakan",
+    desc: "Jika ada cicilan yang belum dibayar.",
   },
   {
-    title: "Pembayaran Angsuran",
-    desc: "Bayar bulanan sesuai jadwal. Keterlambatan mengikuti kebijakan koperasi.",
+    title: "Denda 1% setelah jatuh tempo",
+    desc: "Tambahan denda jika melewati batas waktu yang disepakati.",
   },
 ];
 
 export const loanRequirements: Requirement[] = [
-  "Menjadi anggota aktif minimal 1 bulan",
-  "Fotokopi KTP dan Kartu Keluarga",
-  "Kartu Anggota Koperasi",
-  "Slip gaji / bukti penghasilan 1–3 bulan terakhir",
-  "Rekening listrik/air (opsional untuk verifikasi alamat)",
+  "Menjadi anggota koperasi",
+  "Mengajukan permohonan pinjaman",
+  "Disetujui oleh pengurus",
+  "Menyepakati perjanjian pinjaman",
+  "Membayar kewajiban sesuai perjanjian",
 ];

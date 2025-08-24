@@ -18,7 +18,7 @@ export default function LoanRequirementsSection() {
 
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white rounded-2xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-4">Langkah Pengajuan</h3>
+            <h3 className="text-xl font-semibold mb-4">kewajiban Peminjam</h3>
             <ol className="space-y-4 list-decimal list-inside">
               {loanSteps.map((s, i) => (
                 <li key={i} className="leading-relaxed">
@@ -30,7 +30,7 @@ export default function LoanRequirementsSection() {
           </div>
 
           <div className="bg-white rounded-2xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-4">Persyaratan Dokumen</h3>
+            <h3 className="text-xl font-semibold mb-4">Syarat Peminjaman</h3>
             <ul className="space-y-3">
               {loanRequirements.map((r, i) => (
                 <li key={i} className="flex items-start gap-3">

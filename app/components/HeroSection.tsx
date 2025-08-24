@@ -71,10 +71,10 @@ export default function HeroSection() {
                 <span className="ml-1 h-8 w-[3px] bg-green-600 animate-pulse"></span>
               </div>
               <h1 className="text-5xl text-gray-800 font-extrabold sm:text-6xl">
-                Bergabunglah dengan Koperasi Sidomanunggal
+                Bergabunglah dengan Koperasi Sido Manunggal
               </h1>
               <p className="text-lg">
-                Koperasi Sidomanunggal berkomitmen untuk meningkatkan
+                Koperasi Sido Manunggal berkomitmen untuk meningkatkan
                 kesejahteraan anggotanya melalui layanan yang berkualitas dan
                 akses yang lebih baik terhadap sumber daya.
               </p>

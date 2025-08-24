@@ -9,7 +9,7 @@ export default function CTASection() {
           Mari Bergabung dan Tumbuh Bersama Kami!
         </h2>
         <p className="text-lg mb-10 text-blue-100 max-w-2xl mx-auto font-light">
-          Jadilah bagian dari Koperasi Sidomanunggal. Nikmati berbagai manfaat
+          Jadilah bagian dari Koperasi Sido Manunggal. Nikmati berbagai manfaat
           dan kemudahan layanan keuangan untuk mencapai tujuan finansial Anda.
         </p>
         <a

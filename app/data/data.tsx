@@ -46,13 +46,13 @@ export const services = [
 export const testimonials = [
   {
     quote:
-      "Bergabung dengan Koperasi Sidomanunggal sangat membantu perekonomian keluarga saya. Prosesnya mudah dan pelayanannya ramah.",
+      "Bergabung dengan Koperasi Sido Manunggal sangat membantu perekonomian keluarga saya. Prosesnya mudah dan pelayanannya ramah.",
     name: "Budi Santoso",
     role: "Anggota Sejak 2018",
   },
   {
     quote:
-      "Proses pinjaman modal usaha saya cepat disetujui. Terima kasih Koperasi Sidomanunggal!",
+      "Proses pinjaman modal usaha saya cepat disetujui. Terima kasih Koperasi Sido Manunggal!",
     name: "Siti Aminah",
     role: "Anggota Sejak 2020",
   },

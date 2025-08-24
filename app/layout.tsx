@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description:
-    "Koperasi Sidomanunggal: layanan simpan pinjam & kredit berbasis asas kekeluargaan dan gotong royong di Kulon Progo.",
+    "Koperasi Sido Manunggal: layanan simpan pinjam & kredit berbasis asas kekeluargaan dan gotong royong di Kulon Progo.",
   alternates: {
     canonical: siteUrl,
   },

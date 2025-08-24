@@ -3,7 +3,7 @@ export default function WhyChooseUsSection() {
     <section className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 md:mb-16 text-center">
-          Mengapa Memilih Koperasi Sidomanunggal?
+          Mengapa Memilih Koperasi Sido Manunggal?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div className="p-6">

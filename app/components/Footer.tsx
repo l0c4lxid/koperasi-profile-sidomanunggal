@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Footer Column 1: About */}
           <div>
             <h5 className="text-lg font-semibold text-white mb-4">
-              Koperasi Sidomanunggal
+              Koperasi Sido Manunggal
             </h5>
             <p className="text-sm leading-relaxed">
               Menyediakan solusi simpan pinjam dan kredit yang amanah dan
@@ -120,7 +120,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-700 pt-8 text-center text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Koperasi Sidomanunggal. Semua Hak
+            &copy; {new Date().getFullYear()} Koperasi Sido Manunggal. Semua Hak
             Cipta Dilindungi Undang-Undang.
           </p>
         </div>

@@ -23,7 +23,9 @@ export default function MemberRequirementsSection() {
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Kolom Kiri */}
           <div className="bg-gray-50 rounded-2xl p-6 lg:col-span-2">
-            <h3 className="text-xl font-semibold mb-4">Persyaratan Umum</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              Data yang harus diisi oleh calon anggota
+            </h3>
             <ul className="space-y-3">
               {memberRequirements.map((r, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -34,7 +36,7 @@ export default function MemberRequirementsSection() {
             </ul>
 
             <h3 className="text-xl font-semibold mt-8 mb-4">
-              Manfaat Keanggotaan
+              Proses Pendaftaran
             </h3>
             <ul className="grid sm:grid-cols-2 gap-3">
               {memberBenefits.map((b, i) => (
@@ -50,7 +52,9 @@ export default function MemberRequirementsSection() {
 
           {/* Kolom Kanan */}
           <div className="bg-white rounded-2xl shadow p-6">
-            <h3 className="text-xl font-semibold mb-4">Setoran & Biaya</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              Kewajiban saat Mendaftar
+            </h3>
             <dl className="space-y-3">
               {memberFees.map((f, i) => (
                 <div key={i} className="flex items-center justify-between">
